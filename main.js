@@ -1,6 +1,3 @@
-	//var userLog = document.getElementById("Log").value;
-	//var userPass = document.getElementById("Pass");?????????????
-
 function TestAll() {
 	if(document.getElementById("Log").value == "admin"){
 		if(document.getElementById("Pass").value == '123'){

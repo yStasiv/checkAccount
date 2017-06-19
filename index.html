@@ -3,15 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<title>HomeTask</title>
+	<script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
-<form name="Logination" align="center">
-	<h3>Logination</h3><br/>
-		<input type="text" name="Login" id="Log" placeholder="Login"><br/>
-		<input type="password" name="Password" id="Pass" placeholder="Password" maxlength="3"><br/>
-		<input type="button" name="OkPass" id="Go" value="Enter" onclick="TestAll()">	
-   		<input type="button" value="Help me Please" onclick="Help()"></p>
-</form>
+<table border="3" align="center" >
+	<tr>
+		<td>
+			<form name="Logination" id="Logination" align="center">
+				<div id="Logination" onclick="$('#Logination').hide()">
+					<h3>Logination</h3><br/>
+				</div>
+				<div>
+					<input type="text" name="Login" id="Log" placeholder="Login"><br/>
+					<input type="password" name="Password" id="Pass" placeholder="Password" maxlength="3"><br/>
+					<input type="button" name="OkPass" id="Go" value="Enter" onclick="TestAll()">	
+   					<input type="button" value="Help me Please" onclick="Help()"></p>
+   				</div>
+			</form>
+		</td>
+	</tr>
+</table>
+	<div id="prikol" onclick="$('#Logination').show()" align="center">
+If you have some problem click here
+	</div>
 	<script src="main.js"></script>
 </body>
 </html>
