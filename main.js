@@ -16,3 +16,13 @@ function Help(){
 	else if(helper == null) alert('are you really admin?');
 	else alert('Learn math, baby...');
 }
+
+$(function(){
+    $('#prikol li#submenu ul').hide();
+    $('#prikol li#submenu').hover(
+        function(){
+            $(this).find('ul').slideDown();
+        }, function(){
+            $(this).find('ul').slideUp('fast');
+        });
+});
